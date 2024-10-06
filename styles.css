@@ -1,0 +1,48 @@
+*,
+html,
+body,
+nav,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-grey: rgb(30, 30, 30);
+  --white-text: rgb(255, 255, 255);
+}
+
+#navbar {
+  height: 3.5rem;
+  background-color: var(--dark-grey);
+  color: var(--white-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#website-title {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.35rem;
+  margin-left: 2rem;
+}
+
+#navbar-list {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-item-link {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-right: 2rem;
+  color: var(--white-text);
+  text-decoration: none;
+}
