@@ -2,15 +2,17 @@
 html,
 body,
 nav,
+section,
 ul,
-li {
+li,
+a {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 :root {
-  --dark-grey: rgb(30, 30, 30);
+  --dark-grey: rgb(40, 40, 40);
   --white-text: rgb(255, 255, 255);
 }
 
@@ -45,4 +47,49 @@ li {
   margin-right: 2rem;
   color: var(--white-text);
   text-decoration: none;
+}
+
+/* Change to menu id and classes */
+.nav-dropdown-menu,
+.nav-dropdown-menu-line {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  #navbar-list {
+    display: none;
+  }
+
+  .nav-dropdown-menu {
+    display: inline-flex;
+    height: 1.5rem;
+    width: 5rem;
+    margin-right: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navbar-dropdown-line {
+    border-radius: 0.625rem;
+    height: 0.05rem;
+    width: 2rem;
+    background-color: rgb(176, 176, 176);
+    color: transparent;
+  }
+}
+
+@media (max-width: 200px) {
+  .website-title-section, #website-title, #navbar-list-section {
+    display: none;
+  }
+
+  #navbar {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-dropdown-menu {
+    margin: 0;
+  }
 }
